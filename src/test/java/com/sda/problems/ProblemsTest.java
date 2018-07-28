@@ -14,12 +14,14 @@ import static org.hamcrest.MatcherAssert.*;
 
 class ProblemsTest {
 
+
+
     @Test
     public void shouldFindLastElementFromAListOfAlphabets() throws Exception {
         assertThat(Problems.last(asList("a", "b", "c", "d")),
                 is(equalTo("d")));
     }
-/*
+
     @Test
     public void shouldFindSecondLastElementFromAList() throws Exception {
         List<Integer> numbers = asList(1, 2, 11, 4, 5, 8, 10, 6);
@@ -49,7 +51,7 @@ class ProblemsTest {
         assertThat(duplicates, hasSize(8));
         assertThat(duplicates, contains("a", "a", "b", "b", "c", "c", "d", "d"));
     }
-
+/*
     @Test
     public void shouldReturnAListOfThreeRandomSelectedElements() throws Exception {
         List<String> result = Problems.randomSelect(Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h"), 3);
@@ -70,6 +72,6 @@ class ProblemsTest {
         assertThat(primeNumbers, hasSize(8));
         assertThat(primeNumbers, hasItems(7, 11, 13, 17, 19, 23, 29, 31));
     }
-/*
+*/
 
 }
